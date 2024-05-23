@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+
+.wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button-container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+.button-container > button{
+    height: 70px;
+    width: 100px;
+    border-radius: 7px;
+    border: none;
+    background-color: #d62828;
+    color: rgb(230, 227, 217);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button-container > button:nth-child(2){
+background-color: #f77f00;
+}
+.button-container > button:nth-child(3){
+    background-color: #fcbf49;
+    }
+.button-container > button:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px 7px rgb(20, 20, 20);
+}
+.rock{
+    color: #d62828;
+}
+.paper{
+    color: #f77f00;
+}
+.scissors{
+    color: #fcbf49;
+}
+
+#scoreboard{
+    height: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+#display{
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+span{
+    padding:10px;
+
+}
+.score{
+    font-size: 40px;
+    font-weight: bolder;
+    display: block;
+}
